@@ -1,0 +1,129 @@
+/* Đặt chiều rộng tối đa cho phần nội dung */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng header và chiều cao tổng */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #8cb9bd; /* Màu từ bảng màu */
+    text-align: center;
+} 
+
+.site-info h1 {
+    text-align: center;
+    font-size: 2em; /* Gấp đôi root */
+    text-transform: uppercase; /* Viết hoa */
+    font-family: 'Pacifico', cursive; /* Font Pacifico cho tiêu đề */
+    color: #b67352; /* Màu từ bảng màu */
+}
+  
+.site-info p {
+    text-align: center;
+    font-size: 1em;
+    color: #b67352; /* Màu tối hơn cho phần mô tả */
+}
+  
+/* Định dạng navbar */
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+.navbar li {
+    display: inline;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Màu tối hơn cho chữ */
+}
+  
+/* Định dạng flexbox cho main */
+.main {
+    display: flex;
+    gap: 2%;
+}
+  
+/* Sidebar chiếm 30% phần nội dung */
+.sidebar {
+    flex: 0 0 30%;
+    background-color: #ecb159; /* Màu từ bảng màu */
+    padding: 20px;
+}
+.sidebar h2,
+.sidebar h3 {
+    font-family: 'Pacifico', cursive;
+    color:white;
+}
+.sidebar p{
+    color:white;
+}
+.sidebar img {
+    width: 100%;
+    margin-top: 10px;
+}
+.navbar ul{
+    margin:0px;
+}
+.navbar ul li {
+    float:left;
+    list-style: none;
+    padding:25px 13px ;
+}
+.navbar ul li:hover{
+    background-color:brown;
+}
+.navbar ul li a:hover{
+    color:red;
+}
+.navbar ul li a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+/* Main content chiếm phần còn lại */
+.main-content {
+    flex: 0 0 68%;
+}
+  
+.main-content article {
+    background-color: #fefbf6; /* Màu nền từ bảng màu */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}  
+.main-content h2 {
+    font-family: 'Pacifico', cursive;
+    color: #b67352; /* Màu từ bảng màu */
+}
+.main-content h5 {
+    font-family: 'Pacifico', cursive;
+    color: #8cb9bd; /* Màu từ bảng màu */
+}
+
+
+.facebook-icon {
+    width:20%;
+    
+  }
+
+  /* Footer */
+footer {
+    text-align: center;
+    color: #b67352; /* Màu từ bảng màu */
+    padding: 50px;
+    font-style:italic;
+}   
+  
+  /* Liên kết font Pacifico từ Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');    
